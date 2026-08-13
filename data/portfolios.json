@@ -1,0 +1,266 @@
+[
+  {
+    "id": 1,
+    "slug": "cutter-mobile-app",
+    "title": "Cutter Mobile App",
+    "subtitle": "Technology Process",
+    "tags": ["Mobile App", "UI/UX Design", "React Native"],
+    "category": "Mobile Applications",
+    "description": "A comprehensive mobile application designed to streamline cutting operations for manufacturing companies.",
+    "shortDescription": "We're a full stack firm that can help you from strategy to launch, and anywhere in between.",
+    "challenge": "The client needed a mobile solution that could integrate with their existing manufacturing systems while providing real-time data and intuitive user experience for factory workers.",
+    "solution": "We developed a React Native application with offline capabilities, real-time synchronization, and an intuitive interface designed specifically for manufacturing environments.",
+    "technologies": ["React Native", "Node.js", "MongoDB", "Socket.io", "AWS"],
+    "duration": "8 weeks",
+    "team": "4 developers, 2 designers, 1 project manager",
+    "results": [
+      "40% increase in cutting efficiency",
+      "Real-time data synchronization",
+      "Offline functionality for factory environments",
+      "Intuitive interface for non-technical users"
+    ],
+    "images": {
+      "main": "/assets/imgs/works/1/1.jpg",
+      "gallery": [
+        "/assets/imgs/works/1/1.jpg",
+        "/assets/imgs/works/1/2.jpg",
+        "/assets/imgs/works/1/3.jpg",
+        "/assets/imgs/works/1/4.jpg",
+        "/assets/imgs/works/1/5.jpg"
+      ]
+    },
+    "link": "/portfolio/cutter-mobile-app",
+    "relatedProjects": [2, 3, 4]
+  },
+  {
+    "id": 2,
+    "slug": "ecommerce-platform",
+    "title": "E-commerce Platform",
+    "subtitle": "Digital Commerce Solution",
+    "tags": ["Web Application", "E-commerce", "React"],
+    "category": "Web Applications",
+    "description": "A modern e-commerce platform built with React and Node.js, featuring advanced product management and payment processing.",
+    "shortDescription": "We're a full stack firm that can help you from strategy to launch, and anywhere in between.",
+    "challenge": "The client required a scalable e-commerce solution that could handle thousands of products, multiple payment gateways, and provide an excellent user experience across all devices.",
+    "solution": "We built a full-stack e-commerce platform using React for the frontend and Node.js for the backend, with integrated payment processing and inventory management.",
+    "technologies": ["React", "Node.js", "PostgreSQL", "Stripe", "AWS"],
+    "duration": "12 weeks",
+    "team": "6 developers, 3 designers, 2 QA engineers",
+    "results": [
+      "300% increase in online sales",
+      "99.9% uptime achieved",
+      "Mobile-first responsive design",
+      "Integrated payment processing"
+    ],
+    "images": {
+      "main": "/assets/imgs/works/1/2.jpg",
+      "gallery": [
+        "/assets/imgs/works/1/2.jpg",
+        "/assets/imgs/works/1/3.jpg",
+        "/assets/imgs/works/1/4.jpg",
+        "/assets/imgs/works/1/5.jpg",
+        "/assets/imgs/works/1/1.jpg"
+      ]
+    },
+    "link": "/portfolio/ecommerce-platform",
+    "relatedProjects": [1, 3, 5]
+  },
+  {
+    "id": 3,
+    "slug": "pos-system",
+    "title": "POS System",
+    "subtitle": "Retail Management Solution",
+    "tags": ["POS System", "Retail", "Payment Processing"],
+    "category": "POS Systems",
+    "description": "A comprehensive Point of Sale system designed for modern retail businesses with integrated inventory and customer management.",
+    "shortDescription": "We're a full stack firm that can help you from strategy to launch, and anywhere in between.",
+    "challenge": "The retail client needed a POS system that could handle multiple locations, integrate with existing inventory systems, and provide detailed analytics and reporting.",
+    "solution": "We developed a cloud-based POS system with multi-location support, real-time inventory tracking, and comprehensive reporting capabilities.",
+    "technologies": ["React", "Node.js", "PostgreSQL", "Socket.io", "AWS"],
+    "duration": "10 weeks",
+    "team": "5 developers, 2 designers, 1 business analyst",
+    "results": [
+      "50% reduction in checkout time",
+      "Real-time inventory tracking",
+      "Multi-location management",
+      "Comprehensive reporting system"
+    ],
+    "images": {
+      "main": "/assets/imgs/works/1/3.jpg",
+      "gallery": [
+        "/assets/imgs/works/1/3.jpg",
+        "/assets/imgs/works/1/4.jpg",
+        "/assets/imgs/works/1/5.jpg",
+        "/assets/imgs/works/1/1.jpg",
+        "/assets/imgs/works/1/2.jpg"
+      ]
+    },
+    "link": "/portfolio/pos-system",
+    "relatedProjects": [1, 2, 4]
+  },
+  {
+    "id": 4,
+    "slug": "saas-dashboard",
+    "title": "SaaS Dashboard",
+    "subtitle": "Business Intelligence Platform",
+    "tags": ["SaaS", "Dashboard", "Analytics"],
+    "category": "SaaS Solutions",
+    "description": "A comprehensive SaaS dashboard providing business intelligence and analytics for enterprise clients.",
+    "shortDescription": "We're a full stack firm that can help you from strategy to launch, and anywhere in between.",
+    "challenge": "The client needed a scalable SaaS platform that could handle multiple tenants, provide real-time analytics, and offer customizable dashboards for different user roles.",
+    "solution": "We built a multi-tenant SaaS platform with role-based access control, real-time data visualization, and customizable dashboard widgets.",
+    "technologies": ["React", "Node.js", "MongoDB", "Redis", "Docker"],
+    "duration": "16 weeks",
+    "team": "8 developers, 4 designers, 2 data scientists",
+    "results": [
+      "200+ enterprise clients onboarded",
+      "Real-time data visualization",
+      "Multi-tenant architecture",
+      "Customizable dashboards"
+    ],
+    "images": {
+      "main": "/assets/imgs/works/1/4.jpg",
+      "gallery": [
+        "/assets/imgs/works/1/4.jpg",
+        "/assets/imgs/works/1/5.jpg",
+        "/assets/imgs/works/1/1.jpg",
+        "/assets/imgs/works/1/2.jpg",
+        "/assets/imgs/works/1/3.jpg"
+      ]
+    },
+    "link": "/portfolio/saas-dashboard",
+    "relatedProjects": [2, 3, 5]
+  },
+  {
+    "id": 5,
+    "slug": "ai-automation-tool",
+    "title": "AI Automation Tool",
+    "subtitle": "Intelligent Process Automation",
+    "tags": ["AI", "Automation", "Machine Learning"],
+    "category": "AI Automation",
+    "description": "An AI-powered automation tool that streamlines business processes using machine learning and natural language processing.",
+    "shortDescription": "We're a full stack firm that can help you from strategy to launch, and anywhere in between.",
+    "challenge": "The client needed an AI solution that could automate repetitive business processes, understand natural language commands, and learn from user interactions.",
+    "solution": "We developed an AI automation platform with natural language processing capabilities, machine learning algorithms, and integration APIs for various business systems.",
+    "technologies": ["Python", "TensorFlow", "React", "FastAPI", "PostgreSQL"],
+    "duration": "20 weeks",
+    "team": "6 developers, 2 ML engineers, 2 designers",
+    "results": [
+      "70% reduction in manual tasks",
+      "Natural language processing",
+      "Machine learning automation",
+      "API integrations"
+    ],
+    "images": {
+      "main": "/assets/imgs/works/1/5.jpg",
+      "gallery": [
+        "/assets/imgs/works/1/5.jpg",
+        "/assets/imgs/works/1/1.jpg",
+        "/assets/imgs/works/1/2.jpg",
+        "/assets/imgs/works/1/3.jpg",
+        "/assets/imgs/works/1/4.jpg"
+      ]
+    },
+    "link": "/portfolio/ai-automation-tool",
+    "relatedProjects": [1, 4, 6]
+  },
+  {
+    "id": 6,
+    "slug": "ui-ux-design-system",
+    "title": "UI/UX Design System",
+    "subtitle": "Design System & Component Library",
+    "tags": ["UI/UX", "Design System", "Component Library"],
+    "category": "UI/UX Design",
+    "description": "A comprehensive design system and component library that ensures consistency across all digital products.",
+    "shortDescription": "We're a full stack firm that can help you from strategy to launch, and anywhere in between.",
+    "challenge": "The client needed a unified design system that could be used across multiple products and platforms while maintaining brand consistency and improving development efficiency.",
+    "solution": "We created a comprehensive design system with reusable components, design tokens, and documentation that could be used across web and mobile applications.",
+    "technologies": ["Figma", "Storybook", "React", "SCSS", "Design Tokens"],
+    "duration": "8 weeks",
+    "team": "3 designers, 2 developers, 1 design system specialist",
+    "results": [
+      "50% faster development time",
+      "Consistent brand experience",
+      "Reusable component library",
+      "Comprehensive documentation"
+    ],
+    "images": {
+      "main": "/assets/imgs/works/1/1.jpg",
+      "gallery": [
+        "/assets/imgs/works/1/1.jpg",
+        "/assets/imgs/works/1/2.jpg",
+        "/assets/imgs/works/1/3.jpg",
+        "/assets/imgs/works/1/4.jpg",
+        "/assets/imgs/works/1/5.jpg"
+      ]
+    },
+    "link": "/portfolio/ui-ux-design-system",
+    "relatedProjects": [1, 2, 5]
+  },
+  {
+    "id": 7,
+    "slug": "erp-system",
+    "title": "ERP System",
+    "subtitle": "Enterprise Resource Planning",
+    "tags": ["ERP", "Enterprise", "Business Management"],
+    "category": "ERP",
+    "description": "A comprehensive ERP system that integrates all aspects of business operations into a unified platform.",
+    "shortDescription": "We're a full stack firm that can help you from strategy to launch, and anywhere in between.",
+    "challenge": "The enterprise client needed a comprehensive ERP system that could integrate financial management, inventory control, human resources, and customer relationship management.",
+    "solution": "We developed a modular ERP system with integrated modules for all business functions, providing a unified view of operations and streamlined workflows.",
+    "technologies": ["React", "Node.js", "PostgreSQL", "Redis", "Docker"],
+    "duration": "24 weeks",
+    "team": "10 developers, 4 designers, 3 business analysts",
+    "results": [
+      "Unified business operations",
+      "Integrated module system",
+      "Real-time reporting",
+      "Scalable architecture"
+    ],
+    "images": {
+      "main": "/assets/imgs/works/1/2.jpg",
+      "gallery": [
+        "/assets/imgs/works/1/2.jpg",
+        "/assets/imgs/works/1/3.jpg",
+        "/assets/imgs/works/1/4.jpg",
+        "/assets/imgs/works/1/5.jpg",
+        "/assets/imgs/works/1/1.jpg"
+      ]
+    },
+    "link": "/portfolio/erp-system",
+    "relatedProjects": [3, 4, 6]
+  },
+  {
+    "id": 8,
+    "slug": "seo-optimization",
+    "title": "SEO Optimization",
+    "subtitle": "Search Engine Optimization",
+    "tags": ["SEO", "Digital Marketing", "Analytics"],
+    "category": "SEO",
+    "description": "Comprehensive SEO optimization strategy that improved search rankings and organic traffic for multiple client websites.",
+    "shortDescription": "We're a full stack firm that can help you from strategy to launch, and anywhere in between.",
+    "challenge": "Multiple clients needed to improve their search engine rankings and increase organic traffic while competing in highly competitive markets.",
+    "solution": "We implemented a comprehensive SEO strategy including technical optimization, content strategy, link building, and ongoing monitoring and optimization.",
+    "technologies": ["Google Analytics", "Search Console", "SEMrush", "Ahrefs", "WordPress"],
+    "duration": "Ongoing",
+    "team": "2 SEO specialists, 2 content writers, 1 technical analyst",
+    "results": [
+      "300% increase in organic traffic",
+      "Top 10 rankings for target keywords",
+      "Improved user experience",
+      "Comprehensive reporting"
+    ],
+    "images": {
+      "main": "/assets/imgs/works/1/3.jpg",
+      "gallery": [
+        "/assets/imgs/works/1/3.jpg",
+        "/assets/imgs/works/1/4.jpg",
+        "/assets/imgs/works/1/5.jpg",
+        "/assets/imgs/works/1/1.jpg",
+        "/assets/imgs/works/1/2.jpg"
+      ]
+    },
+    "link": "/portfolio/seo-optimization",
+    "relatedProjects": [2, 6, 7]
+  }
+]

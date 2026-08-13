@@ -1,0 +1,416 @@
+[
+  {
+    "id": 1,
+    "name": "Web Applications",
+    "slug": "web-applications",
+    "icon": "Web",
+    "desc": "Secure platforms built to scale with your business.",
+    "description1": "We specialize in building robust, scalable web applications that drive business growth and enhance user experiences. Our team of expert developers creates custom solutions tailored to your specific needs.",
+    "description2": "From e-commerce platforms to enterprise management systems, we deliver web applications that are secure, fast, and user-friendly. Our solutions are built with modern technologies and best practices.",
+    "features": [
+      "Custom Web Development",
+      "E-commerce Solutions",
+      "Enterprise Applications",
+      "API Development",
+      "Database Design",
+      "Security Implementation"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Discovery & Planning",
+        "description": "We analyze your requirements and create a comprehensive project plan."
+      },
+      {
+        "step": "02",
+        "title": "Design & Prototyping",
+        "description": "Our designers create intuitive interfaces and user experiences."
+      },
+      {
+        "step": "03",
+        "title": "Development & Testing",
+        "description": "Expert developers build your application with rigorous testing."
+      },
+      {
+        "step": "04",
+        "title": "Deployment & Support",
+        "description": "We deploy your application and provide ongoing maintenance."
+      }
+    ],
+    "stats": {
+      "satisfaction": "100%",
+      "projects": "150+",
+      "clients": "80+"
+    },
+    "link": "/services/web-applications",
+    "img": "/assets/imgs/works/1/1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Mobile Applications",
+    "slug": "mobile-applications",
+    "icon": "Smartphone",
+    "desc": "Seamless apps designed for iOS and Android users.",
+    "description1": "We create native and cross-platform mobile applications that provide exceptional user experiences across all devices. Our apps are designed to be intuitive, fast, and engaging.",
+    "description2": "Whether you need an iOS app, Android app, or cross-platform solution, we deliver mobile applications that meet your business objectives and exceed user expectations.",
+    "features": [
+      "iOS Development",
+      "Android Development",
+      "Cross-Platform Apps",
+      "UI/UX Design",
+      "App Store Optimization",
+      "Maintenance & Updates"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Requirements Analysis",
+        "description": "Understanding your app requirements and target audience."
+      },
+      {
+        "step": "02",
+        "title": "Design & Wireframing",
+        "description": "Creating beautiful, intuitive mobile interfaces."
+      },
+      {
+        "step": "03",
+        "title": "Development & Testing",
+        "description": "Building and thoroughly testing your mobile application."
+      },
+      {
+        "step": "04",
+        "title": "Launch & Optimization",
+        "description": "Publishing to app stores and optimizing performance."
+      }
+    ],
+    "stats": {
+      "satisfaction": "100%",
+      "projects": "120+",
+      "clients": "65+"
+    },
+    "link": "/services/mobile-applications",
+    "img": "/assets/imgs/works/1/5.jpg"
+  },
+  {
+    "id": 3,
+    "name": "POS Systems",
+    "slug": "pos-systems",
+    "icon": "Receipt",
+    "desc": "Reliable payment solutions for modern retail stores.",
+    "description1": "We develop comprehensive Point of Sale systems that streamline retail operations and enhance customer experiences. Our POS solutions are designed for modern businesses.",
+    "description2": "From small retail stores to large chains, our POS systems provide secure payment processing, inventory management, and detailed reporting capabilities.",
+    "features": [
+      "Payment Processing",
+      "Inventory Management",
+      "Sales Reporting",
+      "Customer Management",
+      "Multi-location Support",
+      "Integration Capabilities"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Business Analysis",
+        "description": "Understanding your retail operations and requirements."
+      },
+      {
+        "step": "02",
+        "title": "System Design",
+        "description": "Designing a POS system tailored to your business needs."
+      },
+      {
+        "step": "03",
+        "title": "Development & Integration",
+        "description": "Building and integrating with existing systems."
+      },
+      {
+        "step": "04",
+        "title": "Training & Support",
+        "description": "Staff training and ongoing technical support."
+      }
+    ],
+    "stats": {
+      "satisfaction": "100%",
+      "projects": "85+",
+      "clients": "45+"
+    },
+    "link": "/services/pos-systems",
+    "img": "/assets/imgs/works/1/3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "SaaS Solutions",
+    "slug": "saas-solutions",
+    "icon": "Cloud",
+    "desc": "Cloud-based products that evolve with your needs.",
+    "description1": "We build scalable Software-as-a-Service solutions that help businesses streamline operations and reduce costs. Our SaaS platforms are designed for growth and flexibility.",
+    "description2": "From subscription management to enterprise SaaS applications, we create cloud-based solutions that provide value to your customers and drive recurring revenue.",
+    "features": [
+      "Cloud Infrastructure",
+      "Subscription Management",
+      "Multi-tenancy",
+      "API Development",
+      "Analytics & Reporting",
+      "Scalable Architecture"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Market Research",
+        "description": "Analyzing market needs and competitive landscape."
+      },
+      {
+        "step": "02",
+        "title": "Product Strategy",
+        "description": "Defining product features and business model."
+      },
+      {
+        "step": "03",
+        "title": "Development & Testing",
+        "description": "Building and testing the SaaS platform."
+      },
+      {
+        "step": "04",
+        "title": "Launch & Growth",
+        "description": "Launching and scaling the SaaS business."
+      }
+    ],
+    "stats": {
+      "satisfaction": "100%",
+      "projects": "60+",
+      "clients": "35+"
+    },
+    "link": "/services/saas-solutions",
+    "img": "/assets/imgs/works/1/6.jpg"
+  },
+  {
+    "id": 5,
+    "name": "AI Automation",
+    "slug": "ai-automation",
+    "icon": "SmartToy",
+    "desc": "Smarter workflows that save time and increase output.",
+    "description1": "We implement AI-powered automation solutions that streamline business processes and improve efficiency. Our AI solutions help businesses work smarter, not harder.",
+    "description2": "From chatbots to predictive analytics, we leverage cutting-edge AI technologies to automate repetitive tasks and provide intelligent insights for better decision-making.",
+    "features": [
+      "Process Automation",
+      "Chatbots & AI Assistants",
+      "Predictive Analytics",
+      "Machine Learning",
+      "Data Processing",
+      "Workflow Optimization"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Process Assessment",
+        "description": "Identifying automation opportunities in your workflows."
+      },
+      {
+        "step": "02",
+        "title": "AI Solution Design",
+        "description": "Designing AI-powered automation solutions."
+      },
+      {
+        "step": "03",
+        "title": "Implementation & Training",
+        "description": "Deploying AI solutions and training your team."
+      },
+      {
+        "step": "04",
+        "title": "Optimization & Scaling",
+        "description": "Continuously improving and scaling AI solutions."
+      }
+    ],
+    "stats": {
+      "satisfaction": "100%",
+      "projects": "40+",
+      "clients": "25+"
+    },
+    "link": "/services/ai-automation",
+    "img": "/assets/imgs/works/1/1.jpg"
+  },
+  {
+    "id": 6,
+    "name": "SEO",
+    "slug": "seo",
+    "icon": "Search",
+    "desc": "Proven strategies to grow organic traffic and improve search rankings.",
+    "description1": "We implement comprehensive SEO strategies that improve your website's visibility in search engines and drive qualified organic traffic to your business.",
+    "description2": "Our data-driven SEO approach includes technical optimization, content strategy, and link building to help you achieve sustainable search engine rankings.",
+    "features": [
+      "Technical SEO",
+      "Content Optimization",
+      "Keyword Research",
+      "Link Building",
+      "Local SEO",
+      "Analytics & Reporting"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "SEO Audit",
+        "description": "Comprehensive analysis of your current SEO performance."
+      },
+      {
+        "step": "02",
+        "title": "Strategy Development",
+        "description": "Creating a customized SEO strategy for your business."
+      },
+      {
+        "step": "03",
+        "title": "Implementation",
+        "description": "Executing technical and content optimizations."
+      },
+      {
+        "step": "04",
+        "title": "Monitoring & Optimization",
+        "description": "Tracking results and continuously improving performance."
+      }
+    ],
+    "stats": {
+      "satisfaction": "100%",
+      "projects": "200+",
+      "clients": "120+"
+    },
+    "link": "/services/seo",
+    "img": "/assets/imgs/works/1/5.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Google Ads",
+    "slug": "google-ads",
+    "icon": "Campaign",
+    "desc": "Targeted advertising campaigns to boost conversions and reach.",
+    "description1": "We create and manage Google Ads campaigns that drive targeted traffic and generate qualified leads for your business. Our PPC strategies maximize ROI.",
+    "description2": "From search campaigns to display advertising, we optimize your Google Ads to reach the right audience at the right time with compelling messaging.",
+    "features": [
+      "Search Campaigns",
+      "Display Advertising",
+      "Shopping Campaigns",
+      "Remarketing",
+      "Conversion Tracking",
+      "Performance Optimization"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Campaign Strategy",
+        "description": "Developing targeted advertising strategies for your business."
+      },
+      {
+        "step": "02",
+        "title": "Ad Creation & Setup",
+        "description": "Creating compelling ads and setting up campaigns."
+      },
+      {
+        "step": "03",
+        "title": "Launch & Monitor",
+        "description": "Launching campaigns and monitoring performance."
+      },
+      {
+        "step": "04",
+        "title": "Optimization",
+        "description": "Continuously optimizing for better results and ROI."
+      }
+    ],
+    "stats": {
+      "satisfaction": "100%",
+      "projects": "180+",
+      "clients": "95+"
+    },
+    "link": "/services/google-ads",
+    "img": "/assets/imgs/works/1/3.jpg"
+  },
+  {
+    "id": 8,
+    "name": "ERP",
+    "slug": "erp",
+    "icon": "AccountTree",
+    "desc": "Streamlined operations for growing companies.",
+    "description1": "We develop and implement Enterprise Resource Planning systems that integrate all aspects of your business operations into a unified platform.",
+    "description2": "Our ERP solutions help growing companies streamline processes, improve efficiency, and gain better insights into their operations and performance.",
+    "features": [
+      "Business Process Integration",
+      "Financial Management",
+      "Inventory Control",
+      "Human Resources",
+      "Customer Relationship Management",
+      "Reporting & Analytics"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Business Process Mapping",
+        "description": "Mapping and analyzing your current business processes."
+      },
+      {
+        "step": "02",
+        "title": "ERP Solution Design",
+        "description": "Designing a customized ERP solution for your business."
+      },
+      {
+        "step": "03",
+        "title": "Implementation & Training",
+        "description": "Implementing the ERP system and training your team."
+      },
+      {
+        "step": "04",
+        "title": "Support & Maintenance",
+        "description": "Providing ongoing support and system maintenance."
+      }
+    ],
+    "stats": {
+      "satisfaction": "100%",
+      "projects": "35+",
+      "clients": "20+"
+    },
+    "link": "/services/erp",
+    "img": "/assets/imgs/works/1/6.jpg"
+  },
+  {
+    "id": 9,
+    "name": "UI/UX Design",
+    "slug": "ui-ux-design",
+    "icon": "DesignServices",
+    "desc": "Intuitive interfaces crafted for a better user journey.",
+    "description1": "We create user-centered design solutions that enhance user experiences and drive engagement. Our UI/UX designs are both beautiful and functional.",
+    "description2": "From wireframes to high-fidelity prototypes, we design interfaces that are intuitive, accessible, and aligned with your brand identity and business goals.",
+    "features": [
+      "User Research",
+      "Wireframing & Prototyping",
+      "Visual Design",
+      "User Testing",
+      "Design Systems",
+      "Accessibility Design"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "User Research",
+        "description": "Understanding your users and their needs through research."
+      },
+      {
+        "step": "02",
+        "title": "Design & Prototyping",
+        "description": "Creating wireframes and interactive prototypes."
+      },
+      {
+        "step": "03",
+        "title": "User Testing",
+        "description": "Testing designs with real users and iterating."
+      },
+      {
+        "step": "04",
+        "title": "Final Design & Handoff",
+        "description": "Delivering final designs and design specifications."
+      }
+    ],
+    "stats": {
+      "satisfaction": "100%",
+      "projects": "250+",
+      "clients": "150+"
+    },
+    "link": "/services/ui-ux-design",
+    "img": "/assets/imgs/works/1/1.jpg"
+  }
+]

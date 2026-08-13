@@ -1,0 +1,30 @@
+# Deploy Sanity Studio to sanity.io (avoids local 408 timeout by running in GitHub)
+# Add secret: SANITY_AUTH_TOKEN (create at https://www.sanity.io/manage)
+name: Deploy Sanity Studio
+
+on:
+  workflow_dispatch:  # Run manually: Actions → Deploy Sanity Studio → Run workflow
+  push:
+    branches: [master, main]
+    paths:
+      - 'sanity.config.js'
+      - 'sanity/**'
+      - '.github/workflows/deploy-sanity-studio.yml'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - name: Deploy to Sanity
+        env:
+          SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
+        run: npx sanity deploy --force
