@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import { withBase } from '@/lib/basePath';
 
 function About() {
   return (
@@ -12,7 +13,7 @@ function About() {
               <h2 className="fz-60 fw-700 line-height-1 mb-30">
                 What is <br /> Aldwalya?
               </h2>
-              <a href="/page-about" className="butn butn-md butn-light radius-30 bg-white text-dark">
+              <a href={withBase('/page-about')} className="butn butn-md butn-light radius-30 bg-white text-dark">
                 <span className="fz-14 fw-600">Explore now</span>
               </a>
             </div>
@@ -46,7 +47,10 @@ function About() {
                   className="w-100 h-100"
                   style={{ objectFit: 'cover' }}
                 >
-                  <source src="/assets/videos/Black White Bold 3D Social Media Report Presentation (1).mp4" type="video/mp4" />
+                  <source
+                    src={withBase('/assets/videos/about-card.mp4')}
+                    type="video/mp4"
+                  />
                 </video>
                 {/* Dark Overlay for text readability */}
                 <div 
@@ -106,11 +110,11 @@ function About() {
             <div className="d-flex justify-content-between align-items-center flex-wrap">
               <p className="fz-12 text-u mb-0">Trusted by industry leaders and visionaries.</p>
               <div className="logos d-flex align-items-center">
-                <img src="/assets/imgs/clients/01.png" alt="" className="mr-30" style={{ height: '20px', filter: 'grayscale(1) invert(1)' }} />
-                <img src="/assets/imgs/clients/02.png" alt="" className="mr-30" style={{ height: '20px', filter: 'grayscale(1) invert(1)' }} />
-                <img src="/assets/imgs/clients/03.png" alt="" className="mr-30" style={{ height: '20px', filter: 'grayscale(1) invert(1)' }} />
-                <img src="/assets/imgs/clients/04.png" alt="" className="mr-30" style={{ height: '20px', filter: 'grayscale(1) invert(1)' }} />
-                <img src="/assets/imgs/clients/05.png" alt="" className="mr-30" style={{ height: '20px', filter: 'grayscale(1) invert(1)' }} />
+                <img src={withBase('/assets/imgs/clients/01.png')} alt="" className="mr-30" style={{ height: '20px', filter: 'grayscale(1) invert(1)' }} />
+                <img src={withBase('/assets/imgs/clients/02.png')} alt="" className="mr-30" style={{ height: '20px', filter: 'grayscale(1) invert(1)' }} />
+                <img src={withBase('/assets/imgs/clients/03.png')} alt="" className="mr-30" style={{ height: '20px', filter: 'grayscale(1) invert(1)' }} />
+                <img src={withBase('/assets/imgs/clients/04.png')} alt="" className="mr-30" style={{ height: '20px', filter: 'grayscale(1) invert(1)' }} />
+                <img src={withBase('/assets/imgs/clients/05.png')} alt="" className="mr-30" style={{ height: '20px', filter: 'grayscale(1) invert(1)' }} />
               </div>
             </div>
           </div>

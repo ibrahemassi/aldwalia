@@ -24,6 +24,10 @@ function prefixAttr(el, attr) {
   const value = el.getAttribute(attr);
   if (shouldPrefix(value)) {
     el.setAttribute(attr, `${basePath}${value}`);
+    if (el.tagName === 'SOURCE' || el.tagName === 'VIDEO') {
+      const video = el.tagName === 'VIDEO' ? el : el.closest('video');
+      if (video) video.load();
+    }
   }
 }
 

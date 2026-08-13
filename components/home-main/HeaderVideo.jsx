@@ -1,6 +1,7 @@
 "use client";
-import React, { useEffect, useLayoutEffect } from "react";
+import React, { useLayoutEffect } from "react";
 import { gsap } from "gsap";
+import { withBase } from "@/lib/basePath";
 
 function HeaderVideo() {
   useLayoutEffect(() => {
@@ -34,7 +35,7 @@ function HeaderVideo() {
           className="w-100 h-100"
           style={{ objectFit: 'cover' }}
         >
-          <source src="/assets/videos/herosection.mp4" type="video/mp4" />
+          <source src={withBase("/assets/videos/herosection.mp4")} type="video/mp4" />
         </video>
         {/* Overlay to ensure text readability */}
         <div 
@@ -48,7 +49,7 @@ function HeaderVideo() {
           {/* Logo Column */}
           <div className="col-lg-4 col-md-11 col-sm-12">
             <div className="header-logo">
-              <img src="/assets/imgs/aldwalya1-light.png" alt="Aldwalya Logo" />
+              <img src={withBase("/assets/imgs/aldwalya1-light.png")} alt="Aldwalya Logo" />
             </div>
           </div>
 
@@ -102,14 +103,14 @@ function HeaderVideo() {
                 </p>
                 <div className="d-flex align-items-center mt-60">
                   <a
-                    href="/page-contact"
+                    href={withBase("/page-contact")}
                     className="butn butn-md butn-light radius-30 bg-white text-dark"
                   >
                     <span className="text fw-600">Contact Us</span>
                   </a>
                   <div className="icon-img-60 ml-20">
                     <img
-                      src="/assets/imgs/icon-img/arrow-down-big.png"
+                      src={withBase("/assets/imgs/icon-img/arrow-down-big.png")}
                       alt=""
                       style={{ filter: 'brightness(0) invert(1)' }}
                     />
