@@ -6,10 +6,16 @@ import LoadingScreen from '@/components/common/loader';
 import Footer from '@/components/common/Footer';
 import Marq2 from '@/components/common/Marq2';
 import Navbar from '@/components/common/Navbar';
-import Script from 'next/script';
+import ThemeScripts from '@/components/common/ThemeScripts';
 import Clients from '@/components/common/Clients';
 import Header from '@/components/home-digital-agency/Header';
 import Services from '@/components/home-digital-agency/Services';
+import Intro2 from '@/components/home-digital-agency/Intro2';
+import Numbers from '@/components/home-digital-agency/Numbers';
+import Portfolio from '@/components/home-digital-agency/Portfolio';
+import Feat from '@/components/home-digital-agency/Feat';
+import Testimonials from '@/components/home-digital-agency/Testimonials';
+import Blog from '@/components/home-digital-agency/Blog';
 import { getServices } from '@/lib/data';
 
 export const metadata = {
@@ -41,7 +47,7 @@ export default async function Home() {
           <main className="main-bg o-hidden">
             <Header />
             <Services Services={services} />
-            <Intro2 Services={services}/>
+            <Intro2 Services={services} />
             <Numbers />
             <Portfolio />
             <Feat />
@@ -53,50 +59,7 @@ export default async function Home() {
           <Footer />
         </div>
       </div>
-
-      <Script
-        src="/assets/js/ScrollTrigger.min.js"
-        strategy="beforeInteractive"
-      />
-      <Script
-        src="/assets/js/ScrollSmoother.min.js"
-        strategy="beforeInteractive"
-      />
-
-      <Script strategy="beforeInteractive" src="/assets/js/plugins.js"></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/TweenMax.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/charming.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/countdown.js"
-      ></Script>
-
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/gsap.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/splitting.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/isotope.pkgd.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/imgReveal/imagesloaded.pkgd.min.js"
-      ></Script>
-
-      {/* <Script src="/assets/js/smoother-script.js" strategy="lazyOnload" /> */}
-
-      <Script src="/assets/js/scripts.js"></Script>
+      <ThemeScripts />
     </body>
   );
 }

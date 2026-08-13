@@ -1,19 +1,32 @@
 /**
- * This route is responsible for the built-in authoring environment using Sanity Studio.
- * All routes under your studio path is handled by this file using Next.js' catch-all routes:
- * https://nextjs.org/docs/routing/dynamic-routes#catch-all-routes
- *
- * You can learn more about the next-sanity package here:
- * https://github.com/sanity-io/next-sanity
+ * Sanity Studio is disabled for static GitHub Pages export.
+ * Keep sanity/ config and schemas in the repo for local CMS use later.
  */
-
-import { NextStudio } from 'next-sanity/studio'
-import config from '../../../sanity.config'
-
-export const dynamic = 'force-static'
-
-export { metadata, viewport } from 'next-sanity/studio'
+export function generateStaticParams() {
+  return [{ tool: [] }];
+}
 
 export default function StudioPage() {
-  return <NextStudio config={config} />
+  return (
+    <div
+      style={{
+        margin: 0,
+        minHeight: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        background: '#0a1628',
+        color: '#fff',
+        fontFamily: 'system-ui, sans-serif',
+      }}
+    >
+      <div style={{ textAlign: 'center', padding: 24 }}>
+        <h1 style={{ marginBottom: 12 }}>Studio unavailable</h1>
+        <p style={{ opacity: 0.75, maxWidth: 420 }}>
+          Sanity Studio is not included in the static GitHub Pages build. Run
+          the site locally to use the CMS studio.
+        </p>
+      </div>
+    </div>
+  );
 }

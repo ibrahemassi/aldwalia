@@ -1,64 +1,14 @@
 'use client';
 import React from 'react';
-import { PortableText } from '@portabletext/react';
-import { urlFor } from '@/sanity/lib/image';
-
-const components = {
-  types: {
-    image: ({ value }) => {
-      if (!value?.asset?._ref) {
-        return null;
-      }
-      return (
-        <div className="project-image mb-40">
-          <img
-            src={urlFor(value).width(1200).height(800).fit('max').auto('format').url()}
-            alt={value.alt || 'Project image'}
-            className="img-fluid radius-15"
-          />
-        </div>
-      );
-    },
-  },
-  block: {
-    h1: ({ children }) => <h1 className="mb-30 text-white">{children}</h1>,
-    h2: ({ children }) => <h2 className="mb-25 mt-40 text-white">{children}</h2>,
-    h3: ({ children }) => <h3 className="mb-20 mt-30 text-white">{children}</h3>,
-    h4: ({ children }) => <h4 className="mb-15 mt-25 text-white">{children}</h4>,
-    blockquote: ({ children }) => (
-      <blockquote className="blockquote mb-30 text-white opacity-8">{children}</blockquote>
-    ),
-    normal: ({ children }) => {
-      if (children && children.length === 1 && children[0] === '') {
-        return <br />;
-      }
-      return <p className="mb-20 text-white opacity-8 fz-18 line-height-1-6">{children}</p>;
-    },
-  },
-  marks: {
-    strong: ({ children }) => <strong className="text-white">{children}</strong>,
-    em: ({ children }) => <em className="text-white">{children}</em>,
-    link: ({ value, children }) => {
-      const target = (value?.href || '').startsWith('http') ? '_blank' : undefined;
-      return (
-        <a href={value?.href} target={target} rel={target === '_blank' ? 'noopener noreferrer' : undefined} className="main-color underline">
-          {children}
-        </a>
-      );
-    },
-  },
-  list: {
-    bullet: ({ children }) => <ul className="mb-20 text-white opacity-8">{children}</ul>,
-    number: ({ children }) => <ol className="mb-20 text-white opacity-8">{children}</ol>,
-  },
-  listItem: {
-    bullet: ({ children }) => <li className="mb-10 d-flex align-items-center"><i className="fas fa-check-circle main-color mr-15 fz-14"></i>{children}</li>,
-    number: ({ children }) => <li className="mb-10">{children}</li>,
-  },
-};
 
 function ProjectBody({ project }) {
   if (!project) return null;
+
+  const descriptionText = Array.isArray(project.description)
+    ? project.description
+        .map((block) => block.children?.map((child) => child.text).join('') || '')
+        .join('\n\n')
+    : project.description || '';
 
   return (
     <section className="project-details-content section-padding main-bg">
@@ -75,7 +25,9 @@ function ProjectBody({ project }) {
                   <h6 className="sub-title main-color mb-20 text-u">Project Overview</h6>
                   <h2 className="fz-50 fw-700 mb-30 text-white">{project.title}</h2>
                   <div className="text mb-40">
-                    <PortableText value={project.description} components={components} />
+                    <p className="mb-20 text-white opacity-8 fz-18 line-height-1-6">
+                      {descriptionText}
+                    </p>
                     {project.description2 && (
                       <p className="text-white opacity-8 fz-18 line-height-1-6 mt-20">{project.description2}</p>
                     )}

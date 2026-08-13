@@ -17,7 +17,8 @@ import Portfolio from '@/components/home-main/Portfolio';
 import Services from '@/components/home-main/Services';
 import Team from '@/components/home-main/Team';
 import Testimonials from '@/components/home-main/Testimonials';
-import Script from 'next/script';
+import ThemeScripts from '@/components/common/ThemeScripts';
+
 import Marq from '@/components/home-main/Marq';
 import Portfolio1 from '@/components/home-main/Portfolio1';
 import { getServices, getProjects } from '@/lib/data';
@@ -66,50 +67,7 @@ export default async function Home() {
           <Footer />
         </div>
       </div>
-
-      <Script
-        src="/assets/js/ScrollTrigger.min.js"
-        strategy="beforeInteractive"
-      />
-      <Script
-        src="/assets/js/ScrollSmoother.min.js"
-        strategy="beforeInteractive"
-      />
-
-      <Script strategy="beforeInteractive" src="/assets/js/plugins.js"></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/TweenMax.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/charming.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/countdown.js"
-      ></Script>
-
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/gsap.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/splitting.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/isotope.pkgd.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/imgReveal/imagesloaded.pkgd.min.js"
-      ></Script>
-
-      {/* <Script src="/assets/js/smoother-script.js" strategy="lazyOnload" /> */}
-
-      <Script src="/assets/js/scripts.js"></Script>
+      <ThemeScripts />
     </body>
   );
 }

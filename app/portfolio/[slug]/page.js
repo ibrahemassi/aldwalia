@@ -5,7 +5,8 @@ import Cursor from "@/components/common/cusor";
 import LoadingScreen from "@/components/common/loader";
 import Footer from "@/components/common/Footer";
 import Navbar from "@/components/common/Navbar";
-import Script from "next/script";
+import ThemeScripts from '@/components/common/ThemeScripts';
+
 import ProjectHeader from "@/components/portfolio/ProjectHeader";
 import ProjectChallenge from "@/components/portfolio/ProjectChallenge";
 import ProjectWorks from "@/components/portfolio/ProjectWorks";
@@ -80,48 +81,7 @@ export default function PortfolioPage({ params }) {
           <Footer />
         </div>
       </div>
-
-      <Script
-        src="/assets/js/ScrollTrigger.min.js"
-        strategy="beforeInteractive"
-      />
-      <Script
-        src="/assets/js/ScrollSmoother.min.js"
-        strategy="beforeInteractive"
-      />
-
-      <Script strategy="beforeInteractive" src="/assets/js/plugins.js"></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/TweenMax.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/charming.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/countdown.js"
-      ></Script>
-
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/gsap.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/splitting.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/isotope.pkgd.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/assets/js/imgReveal/imagesloaded.pkgd.min.js"
-      ></Script>
-
-      <Script src="/assets/js/scripts.js"></Script>
+          <ThemeScripts />
     </body>
   );
 }

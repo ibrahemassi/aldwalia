@@ -1,16 +1,14 @@
 'use client';
 import React from 'react';
-import { PortableText } from '@portabletext/react';
 
 function BlogAuthor({ post }) {
-  // Extract text from bio if it's blockContent
   const getBioText = (bio) => {
     if (typeof bio === 'string') {
       return bio;
     }
     if (Array.isArray(bio)) {
       return bio
-        .map(block => block.children?.map(child => child.text).join(' '))
+        .map((block) => block.children?.map((child) => child.text).join(' '))
         .join(' ')
         .trim();
     }
@@ -26,9 +24,9 @@ function BlogAuthor({ post }) {
               <div className="row align-items-center">
                 <div className="col-md-3">
                   <div className="author-avatar">
-                    <img 
-                      src={post.author.avatar} 
-                      alt={post.author.name} 
+                    <img
+                      src={post.author.avatar}
+                      alt={post.author.name}
                       className="img-fluid radius-15"
                     />
                   </div>
@@ -37,13 +35,7 @@ function BlogAuthor({ post }) {
                   <div className="author-info">
                     <h4 className="mb-15">About the Author</h4>
                     <h5 className="mb-10">{post.author.name}</h5>
-                    {Array.isArray(post.author.bio) ? (
-                      <div className="mb-20">
-                        <PortableText value={post.author.bio} />
-                      </div>
-                    ) : (
-                      <p className="mb-20">{getBioText(post.author.bio)}</p>
-                    )}
+                    <p className="mb-20">{getBioText(post.author.bio)}</p>
                     <div className="author-meta">
                       <span className="mr-20">
                         <i className="ti-calendar mr-5"></i>
@@ -70,4 +62,3 @@ function BlogAuthor({ post }) {
 }
 
 export default BlogAuthor;
-
