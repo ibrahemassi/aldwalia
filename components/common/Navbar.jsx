@@ -1,87 +1,139 @@
 'use client';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { withBase } from '@/lib/basePath';
 import { BRAND } from '@/lib/brand';
 
 function Navbar() {
-  function handleScroll() {
-    const bodyScroll = window.scrollY;
-    const navbar = document.querySelector('.navbar');
+  const [showLogo, setShowLogo] = useState(false);
 
-    if (bodyScroll > 300) navbar.classList.add('nav-scroll');
-    else navbar.classList.remove('nav-scroll');
-  }
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    const updateNav = () => {
+      const heroLogo = document.querySelector('.hero-logo');
+      const hero = document.querySelector('.hero-luma');
+
+      if (heroLogo) {
+        setShowLogo(heroLogo.getBoundingClientRect().bottom < 72);
+      } else if (hero) {
+        setShowLogo(hero.getBoundingClientRect().bottom < 80);
+      } else {
+        setShowLogo(true);
+      }
+    };
+
+    updateNav();
+    window.addEventListener('scroll', updateNav, { passive: true });
+    window.addEventListener('resize', updateNav);
+    return () => {
+      window.removeEventListener('scroll', updateNav);
+      window.removeEventListener('resize', updateNav);
+    };
   }, []);
-  function handleDropdownMouseMove(event) {
-    event.currentTarget.querySelector('.dropdown-menu').classList.add('show');
+
+  function handleToggleNav() {
+    const menu = document.querySelector('.navbar .navbar-collapse');
+    if (!menu) return;
+    menu.classList.toggle('show');
   }
 
-  function handleDropdownMouseLeave(event) {
-    event.currentTarget
-      .querySelector('.dropdown-menu')
-      .classList.remove('show');
-  }
-  function handleToggleNav() {
-    if (
-      document
-        .querySelector('.navbar .navbar-collapse')
-        .classList.contains('show')
-    ) {
-      document
-        .querySelector('.navbar .navbar-collapse')
-        .classList.remove('show');
-    } else if (
-      !document
-        .querySelector('.navbar .navbar-collapse')
-        .classList.contains('show')
-    ) {
-      document.querySelector('.navbar .navbar-collapse').classList.add('show');
-    }
-  }
   return (
-    <nav className="navbar navbar-expand-lg bord blur">
+    <nav className="navbar navbar-expand-lg bord blur nexora-navbar">
       <div className="container o-hidden">
-        <a className="logo nexora-nav-logo" href={withBase('/')}>
+        <a
+          className={`logo nexora-nav-logo${showLogo ? ' is-visible' : ''}`}
+          href={withBase('/')}
+        >
           <img
             className="logo-full"
             src={withBase(BRAND.logo)}
             alt={BRAND.name}
           />
-          <img
-            className="logo-mark"
-            src={withBase(BRAND.logoMark)}
-            alt={BRAND.name}
-          />
         </a>
         <style>{`
+          .navbar.nexora-navbar {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            transform: none !important;
+            -webkit-transform: none !important;
+            z-index: 999;
+            background: transparent !important;
+            border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+          }
+          .navbar.nexora-navbar.nav-scroll {
+            top: 0 !important;
+            transform: none !important;
+            -webkit-transform: none !important;
+            background: transparent !important;
+          }
+          .navbar.nexora-navbar .container {
+            display: grid;
+            grid-template-columns: 200px 1fr auto;
+            align-items: center;
+            position: relative;
+          }
           .nexora-nav-logo {
             display: flex;
             align-items: center;
-            max-width: none !important;
+            width: 200px !important;
+            max-width: 200px !important;
+            min-width: 200px;
+            margin: 0 !important;
+            padding: 0;
+            opacity: 0;
+            pointer-events: none;
+            visibility: hidden;
+            transition: opacity 0.25s ease, visibility 0.25s ease;
+          }
+          .nexora-nav-logo.is-visible {
+            opacity: 1;
+            pointer-events: auto;
+            visibility: visible;
           }
           .nexora-nav-logo .logo-full {
             height: 44px;
             width: auto;
             max-width: none;
           }
-          .nexora-nav-logo .logo-mark {
+          .navbar.nexora-navbar .navbar-collapse {
+            justify-content: center !important;
+          }
+          .navbar .navbar-toggler {
             display: none;
           }
           @media (max-width: 991px) {
+            .navbar.nexora-navbar .container {
+              grid-template-columns: 160px 1fr auto;
+            }
+            .navbar .navbar-toggler {
+              width: 46px;
+              height: 46px;
+              border-radius: 50%;
+              border: 1px solid rgba(255,255,255,0.35) !important;
+              background: rgba(255,255,255,0.08);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin: 0 18px 0 auto;
+              grid-column: 3;
+              justify-self: end;
+            }
+            .navbar .navbar-toggler .icon-bar {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .nexora-nav-logo,
             .navbar .logo.nexora-nav-logo {
-              max-width: none !important;
-              margin-left: 20px;
+              width: 160px !important;
+              max-width: 160px !important;
+              min-width: 160px;
+              margin: 0 0 0 18px !important;
             }
             .nexora-nav-logo .logo-full {
-              display: none;
-            }
-            .nexora-nav-logo .logo-mark {
-              display: block;
-              width: 56px;
-              height: 56px;
+              height: 36px;
             }
           }
         `}</style>
@@ -121,11 +173,6 @@ function Navbar() {
                 <span className="rolling-text">Services</span>
               </a>
             </li>
-            {/* <li className="nav-item">
-              <a className="nav-link" href="/page-team">
-                <span className="rolling-text">Our Team</span>
-              </a>
-            </li> */}
             <li className="nav-item">
               <a className="nav-link" href="/blog-classic">
                 <span className="rolling-text">Blog</span>

@@ -991,6 +991,12 @@ figure {
   opacity: 0.1;
 }
 
+@media (hover: none), (pointer: coarse), (max-width: 1024px) {
+  .cursor {
+    display: none !important;
+  }
+}
+
 .rolling-text {
   display: inline-block;
   overflow: hidden;
