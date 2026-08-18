@@ -13,7 +13,7 @@ import Intro from '@/components/page-team-details/Intro';
 import Services from '@/components/page-team-details/Services';
 
 export const metadata = {
-  title: 'aldwalya',
+  title: 'Nexora Digital',
   icons: {
     icon: '/assets/imgs/favicon.ico',
     shortcut: '/assets/imgs/favicon.ico',

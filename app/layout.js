@@ -3,8 +3,8 @@ import BasePathFix from '@/components/common/BasePathFix';
 import { withBase } from '@/lib/basePath';
 
 export const metadata = {
-  title: 'aldwalya',
-  description: 'Aldwalya for Software - Creative Software Solutions',
+  title: 'Nexora Digital',
+  description: 'Nexora Digital — a fictional software studio based in Dubai, UAE.',
   icons: {
     icon: [
       {

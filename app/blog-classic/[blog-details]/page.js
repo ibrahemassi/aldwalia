@@ -18,7 +18,7 @@ import {
 } from '@/lib/data';
 
 export const metadata = {
-  title: 'aldwalya',
+  title: 'Nexora Digital',
   icons: {
     icon: '/assets/imgs/favicon.ico',
     shortcut: '/assets/imgs/favicon.ico',

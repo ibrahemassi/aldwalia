@@ -9,7 +9,7 @@ import ThemeScripts from '@/components/common/ThemeScripts';
 import ContactPageLayout from '@/components/page-contact/ContactPageLayout';
 
 export const metadata = {
-  title: 'aldwalya',
+  title: 'Nexora Digital',
   icons: {
     icon: '/assets/imgs/favicon.ico',
     shortcut: '/assets/imgs/favicon.ico',

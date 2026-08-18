@@ -38,7 +38,7 @@ function Header() {
           {/* Logo Column */}
           <div className="col-lg-4 col-md-11 col-sm-12">
             <div className="header-logo">
-              <img src="/assets/imgs/aldwalya1-light.png" alt="Aldwalya Logo" />
+              <img src="/assets/imgs/nexora-logo.svg" alt="Nexora Digital logo" />
             </div>
           </div>
 
@@ -99,9 +99,9 @@ function Header() {
               </div>
               <div className="subtext">
                 <p>
-                  At Internatioan Software ( Aldwalya )  , we design and develop powerful digital
+                  At Nexora Digital, we design and develop powerful digital
                   solutions — from apps to enterprise systems — helping
-                  businesses in Lebanon and worldwide grow faster, smarter, and
+                  businesses in Dubai, the UAE, and worldwide grow faster, smarter, and
                   stronger.
                 </p>
                 <div className="d-flex align-items-center mt-60">

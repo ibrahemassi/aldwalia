@@ -1,4 +1,5 @@
 import React from 'react';
+import { BRAND } from '@/lib/brand';
 
 function Footer() {
   return (
@@ -7,20 +8,20 @@ function Footer() {
         <div className="row justify-content-between">
           <div className="col-lg-2">
             <div className="logo icon-img-100 md-mb80">
-              <img src="/assets/imgs/aldwalya1-light.png" alt="" />
+              <img src={BRAND.logo} alt={BRAND.name} />
             </div>
           </div>
           <div className="col-lg-4">
             <div className="column md-mb50">
               <h6 className="sub-title mb-30">Contact</h6>
               <h6 className="p-color fw-400">
-                Lebanon - saida   <br /> beirut
+                {BRAND.addressLine1} <br /> {BRAND.addressLine2}
               </h6>
               <h6 className="mt-30 mb-15">
-                <a href="#0">International Software </a>
+                <a href="#0">{BRAND.name}</a>
               </h6>
-              <a href="#0" className="underline">
-                <span className="fz-22 main-color">+961 76031089</span>
+              <a href={`tel:${BRAND.phone.replace(/\s/g, '')}`} className="underline">
+                <span className="fz-22 main-color">{BRAND.phone}</span>
               </a>
             </div>
           </div>
@@ -80,12 +81,7 @@ function Footer() {
         <div className="pt-30 pb-30 mt-80 bord-thin-top">
           <div className="text-center">
             <p className="fz-14">
-              © 2026 This Website  is Proudly Powered by{' '}
-              <span className="underline main-color">
-                <a href="https://themeforest.net/user/UiCamp" target="_blank">
-                  International Software Team
-                </a>
-              </span>
+              © 2026 {BRAND.name}. All rights reserved.
             </p>
           </div>
         </div>

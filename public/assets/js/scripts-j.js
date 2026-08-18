@@ -71,10 +71,10 @@ $(function () {
 
     if (bodyScroll > 300) {
       navbar.addClass('nav-scroll');
-              logo.attr('src', 'assets/imgs/aldwalya1-dark.png');
+              logo.attr('src', 'assets/imgs/nexora-logo.svg');
     } else {
       navbar.removeClass('nav-scroll');
-              logo.attr('src', 'assets/imgs/aldwalya1-light.png');
+              logo.attr('src', 'assets/imgs/nexora-logo.svg');
     }
   });
 

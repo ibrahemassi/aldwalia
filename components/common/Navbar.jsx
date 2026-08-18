@@ -1,5 +1,7 @@
 'use client';
 import React, { useEffect } from 'react';
+import { withBase } from '@/lib/basePath';
+import { BRAND } from '@/lib/brand';
 
 function Navbar() {
   function handleScroll() {
@@ -42,8 +44,12 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bord blur">
       <div className="container o-hidden">
-        <a className="logo icon-img-140" href="/">
-          <img src="/assets/imgs/aldwalya0-light.png" alt="logo" style={{ maxWidth: '160px' }} />
+        <a className="logo icon-img-140" href={withBase('/')}>
+          <img
+            src={withBase(BRAND.logo)}
+            alt={BRAND.name}
+            style={{ maxWidth: '170px', height: 'auto' }}
+          />
         </a>
 
         <button

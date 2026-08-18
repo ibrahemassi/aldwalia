@@ -11,7 +11,7 @@ function About() {
           <div className="col-lg-6">
             <div className="sec-head">
               <h2 className="fz-60 fw-700 line-height-1 mb-30">
-                What is <br /> Aldwalya?
+                What is <br /> Nexora?
               </h2>
               <a href={withBase('/page-about')} className="butn butn-md butn-light radius-30 bg-white text-dark">
                 <span className="fz-14 fw-600">Explore now</span>
@@ -21,8 +21,8 @@ function About() {
           <div className="col-lg-5 ml-auto">
             <div className="text">
               <p className="fz-20 line-height-1-6 opacity-8">
-                Aldwalya for Software is a leading technology partner that helps your business 
-                grow through innovative digital solutions while staying ahead of the global 
+                Nexora Digital is a Dubai-based technology partner that helps your business
+                grow through innovative digital solutions while staying ahead of the global
                 software market trends.
               </p>
             </div>

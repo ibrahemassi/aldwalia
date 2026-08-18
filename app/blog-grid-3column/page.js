@@ -10,7 +10,7 @@ import ThemeScripts from '@/components/common/ThemeScripts';
 import Header from '@/components/blog-grid-3column/Header';
 import Blogs from '@/components/blog-grid-3column/Blogs';
 export const metadata = {
-  title: 'aldwalya',
+  title: 'Nexora Digital',
   icons: {
     icon: '/assets/imgs/favicon.ico',
     shortcut: '/assets/imgs/favicon.ico',

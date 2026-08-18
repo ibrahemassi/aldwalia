@@ -29,7 +29,7 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: `${service.name} - aldwalya`,
+    title: `${service.name} - Nexora Digital`,
     description: service.desc,
     icons: {
       icon: '/assets/imgs/favicon.ico',

@@ -134,7 +134,7 @@ function ContactPageLayout() {
                               marginBottom: 0,
                             }}
                           >
-                            Besòs 1, 08174 Sant Cugat del Vallès, Barcelona
+                            Office 2408, Almas Tower, JLT, Dubai, UAE
                           </p>
                         </div>
                       </div>
@@ -176,7 +176,7 @@ function ContactPageLayout() {
                               marginBottom: 0,
                             }}
                           >
-                            support@aldwalya.com
+                            hello@nexora.digital
                           </p>
                         </div>
                       </div>
@@ -217,7 +217,7 @@ function ContactPageLayout() {
                               marginBottom: 0,
                             }}
                           >
-                            +1 840 841 25 69
+                            +971 4 368 2210
                           </p>
                         </div>
                       </div>

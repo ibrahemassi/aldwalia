@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 
 const projectRoot = path.join(__dirname, '..');
-const srcPath = path.join(projectRoot, 'public', 'assets', 'imgs', 'aldwalya1-light-withoutText.png');
+const srcPath = path.join(projectRoot, 'public', 'assets', 'imgs', 'nexora-mark.svg');
 const outPath = path.join(projectRoot, 'public', 'assets', 'imgs', 'favicon-32x32.png');
 
 async function generate() {

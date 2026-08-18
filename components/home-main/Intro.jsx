@@ -45,7 +45,7 @@ function Intro() {
                     </div>
                     <div className="ml-auto">
                       <div className="icon-img-80">
-                        <img src="/assets/imgs/aldwalya1-brackets.png" alt="" />
+                        <img src="/assets/imgs/nexora-mark.svg" alt="" />
                       </div>
                     </div>
                   </div>
@@ -58,7 +58,7 @@ function Intro() {
                     </div>
                     <div className="ml-auto">
                       <div className="icon-img-80">
-                        <img src="/assets/imgs/aldwalya1-brackets.png" alt="" />
+                        <img src="/assets/imgs/nexora-mark.svg" alt="" />
                       </div>
                     </div>
                   </div>
