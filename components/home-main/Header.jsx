@@ -38,7 +38,16 @@ function Header() {
           {/* Logo Column */}
           <div className="col-lg-4 col-md-11 col-sm-12">
             <div className="header-logo">
-              <img src="/assets/imgs/nexora-logo.svg" alt="Nexora Digital logo" />
+              <img
+                className="logo-full"
+                src="/assets/imgs/nexora-logo.svg"
+                alt="Nexora Digital logo"
+              />
+              <img
+                className="logo-mark"
+                src="/assets/imgs/nexora-mark.svg"
+                alt="Nexora Digital logo"
+              />
             </div>
           </div>
 
@@ -49,37 +58,44 @@ function Header() {
           >
             <style>
               {`
-                @media (max-width: 1000px) {
-                  /* Center text */
-                  .col-lg-7.col-md-11.col-sm-12 {
+                .header-logo .logo-full {
+                  width: 320px;
+                  max-width: 100%;
+                  height: auto;
+                  display: block;
+                }
+                .header-logo .logo-mark {
+                  display: none;
+                }
+                @media (max-width: 991px) {
+                  .header .col-lg-7.col-md-11.col-sm-12 {
                     text-align: center !important;
                   }
-                  .col-lg-7.col-md-11.col-sm-12 .d-flex {
+                  .header .col-lg-7.col-md-11.col-sm-12 .d-flex {
                     justify-content: center !important;
                   }
-
-                  /* Center logo */
                   .header-logo {
                     text-align: center;
+                    margin-bottom: 28px;
+                    display: flex;
+                    justify-content: center;
                   }
-                  .header-logo img {
-                    max-width: 150px;
-                    margin: 0 auto;
+                  .header-logo .logo-full {
+                    display: none;
+                  }
+                  .header-logo .logo-mark {
                     display: block;
+                    width: 110px;
+                    height: 110px;
+                    margin: 0 auto;
                   }
-
-                  /* Scale down headings */
                   .caption h1 {
                     font-size: 1.6rem;
                     line-height: 1.3;
                   }
-
-                  /* Subtext paragraph smaller */
                   .caption .subtext p {
                     font-size: 0.9rem;
                   }
-
-                  /* Adjust button size */
                   .caption .butn {
                     padding: 8px 16px;
                     font-size: 0.85rem;

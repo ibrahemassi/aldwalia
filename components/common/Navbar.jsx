@@ -44,13 +44,47 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bord blur">
       <div className="container o-hidden">
-        <a className="logo icon-img-140" href={withBase('/')}>
+        <a className="logo nexora-nav-logo" href={withBase('/')}>
           <img
+            className="logo-full"
             src={withBase(BRAND.logo)}
             alt={BRAND.name}
-            style={{ maxWidth: '170px', height: 'auto' }}
+          />
+          <img
+            className="logo-mark"
+            src={withBase(BRAND.logoMark)}
+            alt={BRAND.name}
           />
         </a>
+        <style>{`
+          .nexora-nav-logo {
+            display: flex;
+            align-items: center;
+            max-width: none !important;
+          }
+          .nexora-nav-logo .logo-full {
+            height: 44px;
+            width: auto;
+            max-width: none;
+          }
+          .nexora-nav-logo .logo-mark {
+            display: none;
+          }
+          @media (max-width: 991px) {
+            .navbar .logo.nexora-nav-logo {
+              max-width: none !important;
+              margin-left: 20px;
+            }
+            .nexora-nav-logo .logo-full {
+              display: none;
+            }
+            .nexora-nav-logo .logo-mark {
+              display: block;
+              width: 56px;
+              height: 56px;
+            }
+          }
+        `}</style>
 
         <button
           className="navbar-toggler"

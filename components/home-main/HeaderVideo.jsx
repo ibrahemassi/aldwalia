@@ -49,7 +49,16 @@ function HeaderVideo() {
           {/* Logo Column */}
           <div className="col-lg-4 col-md-11 col-sm-12">
             <div className="header-logo">
-              <img src={withBase("/assets/imgs/nexora-logo.svg")} alt="Nexora Digital logo" />
+              <img
+                className="logo-full"
+                src={withBase("/assets/imgs/nexora-logo.svg")}
+                alt="Nexora Digital logo"
+              />
+              <img
+                className="logo-mark"
+                src={withBase("/assets/imgs/nexora-mark.svg")}
+                alt="Nexora Digital logo"
+              />
             </div>
           </div>
 
@@ -60,21 +69,36 @@ function HeaderVideo() {
           >
             <style>
               {`
-                @media (max-width: 1000px) {
-                  .col-lg-7.col-md-11.col-sm-12 {
+                .header-logo .logo-full {
+                  width: 320px;
+                  max-width: 100%;
+                  height: auto;
+                  display: block;
+                }
+                .header-logo .logo-mark {
+                  display: none;
+                }
+                @media (max-width: 991px) {
+                  .header .col-lg-7.col-md-11.col-sm-12 {
                     text-align: center !important;
                   }
-                  .col-lg-7.col-md-11.col-sm-12 .d-flex {
+                  .header .col-lg-7.col-md-11.col-sm-12 .d-flex {
                     justify-content: center !important;
                   }
                   .header-logo {
                     text-align: center;
-                    margin-bottom: 30px;
+                    margin-bottom: 28px;
+                    display: flex;
+                    justify-content: center;
                   }
-                  .header-logo img {
-                    max-width: 150px;
-                    margin: 0 auto;
+                  .header-logo .logo-full {
+                    display: none;
+                  }
+                  .header-logo .logo-mark {
                     display: block;
+                    width: 110px;
+                    height: 110px;
+                    margin: 0 auto;
                   }
                   .caption h1 {
                     font-size: 2.2rem;
