@@ -212,6 +212,18 @@ function About() {
           width: auto;
         }
 
+        @media (max-width: 767px) {
+          .about-cards-grid {
+            grid-template-columns: 1fr 1fr;
+          }
+          .about-card-large {
+            grid-column: 1 / -1;
+          }
+          .about-card-large .item-box {
+            min-height: 220px;
+          }
+        }
+
         @media (min-width: 992px) {
           .about-header-row {
             grid-template-columns: 1.2fr 1fr;
